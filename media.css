@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,600;1,100&family=Cormorant+Garamond:wght@500&family=Foldit:wght@800&family=Saira+Condensed:wght@200&family=Sono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+@media only screen and (max-width: 1200) {
+
+header {
+    margin-bottom: 100%;
+}
+  
+    
+}

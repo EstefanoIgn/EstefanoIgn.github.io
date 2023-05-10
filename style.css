@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,600;1,100&family=Cormorant+Garamond:wght@500&family=Foldit:wght@800&family=Saira+Condensed:wght@200&family=Sono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d68c5b;
+    font-family: 'Chivo Mono', monospace;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr) ;
+    grid-template-columns: repeat(8, 1fr) ;
+}
+
+header{
+    width: 100%;
+    background: whitesmoke;
+    position: fixed;
+    display: grid;
+    grid-row: 1 / 2;
+    z-index: 100;
+
+}
+
+#btn-menu{
+    display: none;
+}
+
+header h1{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label img{
+    height: 100%;
+    width: 100%;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: #C46D34;
+    transition: 0.5s;
+}
+
+.menu{
+    display: flex;
+    height: 80px;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin:  auto 0;
+}
+
+header .logo{
+    grid-column: 7 / 8;
+    margin-top: 15px;
+    font-size: 25px;
+    letter-spacing: 10px;
+
+
+}
+
+header .logo:hover{
+    opacity: 0.5;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #C46D34;
+    text-shadow: 3px 0 3px rgba(255, 179, 0, 0.773);
+}
+.menu li{
+    border-right: 1px solid #fff;
+}
+
+.menu li a{
+    display: block;
+    color: #C46D34;
+    padding: 20px;
+    font-size: 14px;
+    font-family: system-ui,sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background: #d68c5b;
+    transition: 0.5s;
+
+}
+
+.menu li:hover a{
+    color: #fff;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.main{
+    padding-top: 112px;
+
+}
+
+.footer{
+    background: #E5E7D8;
+    width: 100vw;
+    text-align: center;
+    padding: 64px 0;
+    margin-top: 64px;
+    grid-row: 7;
+}
+
+/* MAJIXUX CSS */
+
+.section {
+    margin-top: -140px;
+    display: grid;
+    grid-template-rows: repeat(5, 2fr);
+
+}
+
+.section img {
+    width: 100vw;
+    height: auto;
+    grid-row: 1 / 3;
+}
+
+.section .article {
+    position: relative;
+    background: rgba(255, 192, 203, 0.795);
+    height: 40vh;
+    width: 40vw;
+    border-radius: 50px;
+    margin-top: -50%;
+    margin-left: 28%;
+    box-shadow: 10px 10px 10px rgba(255, 255, 0, 0.581);
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr)
+}
+.section .article h3 {
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline wavy #d65d5b;
+    grid-row: 1 / 2;
+}
+
+
+.section .article p {
+    font-size: 25px;
+    grid-row: 2 / 3;
+}
+
+.section .article p span {
+    font-weight: 600;
+}
+
+
+.section .shop{
+    margin-top: 20%;
+    margin-left: 25%;
+    border-radius: 1000px;
+    width: 20vw;
+
+    
+}
+
+.section .shop button {
+    background-color: rgb(255, 255, 0);
+    border: none;
+    border-radius: 50px;
+}
+
+.section .shop button:hover {
+    background-color: #C46D34;
+    transition: .3s;
+}
+
+.section .shop i {
+    font-size: 40px;
+    position: relative;
+    justify-content: start;
+    padding: 10px 60px;
+    
+}
