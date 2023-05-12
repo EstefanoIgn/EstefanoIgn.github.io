@@ -38,6 +38,9 @@
     font-size: 20px;
 }
 
+
+
+/* ESTO HAY QUE AGREGAR A LA PORTADA */
 .container button{
     padding-top: 1%;
 }
@@ -164,6 +167,7 @@ header label:hover{
 
 .caja-principal .men img{
     width: 100%;
+    background-size: contain;
 }
 
 .caja-principal .women{
@@ -187,22 +191,6 @@ header label:hover{
     transition: 0.5s;
     
 }
-
-.prueba{
-    display: block;
-    width: 50%;
-    overflow: hidden;
-}
-
-.prueba img{
-    width: 100%;
-}
-
-.prueba img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
 
 
 .footer{
