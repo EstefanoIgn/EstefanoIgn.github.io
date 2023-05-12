@@ -4,10 +4,58 @@
     font-family: sans-serif;
 }
 
+.container{
+    position: relative;
+    display: column;
+    padding-top: 80px;
+    width: 100%;
+    z-index: -1;
+}
+
+.container img{
+    width: 100%;
+}
+
+.container h1{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    padding-left: 5%;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.container p{
+    padding-top: 10px;
+    position: absolute;
+    color: #fff;
+    top: 58%;
+    padding-left: 5%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container button{
+    padding-top: 1%;
+}
+
+.container button img{
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    padding-left: 15%;
+    width: 30px;
+    height: 30px;
+}
+
 header{
     width: 100%;
-    background: #E5E7D8;
+    background: #fff;
     position: fixed;
+    z-index: 1;
 }
 
 #btn-menu{
@@ -30,6 +78,10 @@ header label img{
     width: 100%;
 }
 
+header .logo{
+    display: block;
+}
+
 header label:hover{
     cursor: pointer;
     background: #C46D34;
@@ -39,6 +91,25 @@ header label:hover{
 .menu{
     display: flex;
     height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu label{
+    width: 80px;
+    height: 40px;
+}
+
+
+.menu .logo{
+    color: #C46D34;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Creepster',cursive;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 .menu ul{
@@ -49,17 +120,9 @@ header label:hover{
     margin:  auto 0;
 }
 
-.menu .logo{
-    margin: auto;
-
-}
-
-.menu .logo:hover{
-    opacity: 0.5;
-}
-
 .menu li{
-    border-right: 1px solid #fff;
+    border-radius: 3px;
+    margin: 0 5px
 }
 
 .menu li a{
@@ -67,10 +130,16 @@ header label:hover{
     color: #C46D34;
     padding: 20px;
     font-size: 14px;
+    font-weight: 600;
     font-family: system-ui,sans-serif;
     text-decoration: none;
 }
 
+.menu .logo:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
 .menu li:hover{
     background: #d68c5b;
     transition: 0.5s;
@@ -81,25 +150,71 @@ header label:hover{
     color: #fff;
 }
 
-.container{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
+
+.caja-principal{
+    display: flex;
+    width: 100%;
 }
 
-.main{
-    padding-top: 112px;
-
+.caja-principal .men{
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+.caja-principal .men img{
+    width: 100%;
+}
+
+.caja-principal .women{
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.caja-principal .women img{
+    width: 100%;
+}
+
+.caja-principal .men img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.caja-principal .women img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.prueba{
+    display: block;
+    width: 50%;
+    overflow: hidden;
+}
+
+.prueba img{
+    width: 100%;
+}
+
+.prueba img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
 
 .footer{
-    background: #E5E7D8;
+    background: #C46D34;
     text-align: center;
+    width: 100%;
     padding: 64px 0;
     margin-top: 64px;
+    bottom: 0; 
 }
 
-@media (max-width:768px){
+@media (max-width:800px){
 
     header label{
         display: block;
@@ -108,7 +223,7 @@ header label:hover{
     .menu{
         position: absolute;
         background:  #E5E7D8;
-        margin-left: -30%;
+        margin-left: -40%;
         transition: 0.5s;
         display: block;
         height: 238px;
@@ -125,14 +240,36 @@ header label:hover{
         margin: 0;
     }
 
-    nav .logo{
+    .menu .logo{
         display: none;
     }
 
     .main{
-        padding-top: 80px;
+        padding-top: 54px;
+    }
+
+    .container h1{
+        font-size: 25px;
+
+    }
+    .container p{
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+    .caja-principal{
+        flex-direction: column;
+    }
+
+    .caja-principal .men{
+        width: 100%;
+    }
+
+    .caja-principal .women{
+        width: 100%;
     }
 
 
-}
 
+
+}
