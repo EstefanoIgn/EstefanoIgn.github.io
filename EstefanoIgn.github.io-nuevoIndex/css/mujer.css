@@ -1,0 +1,50 @@
+
+
+.contenido_mujer {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    padding: 20px;
+    
+}
+
+.card {
+    padding: 20px;
+    margin-top: 30%;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.card img {
+    border-radius: 15px;
+}
+
+.card h3 {
+    letter-spacing: 1px;
+}
+
+.card button {
+    background: #d68c5b;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 15vw;
+    border-radius: 25px;
+}
+
+.card button:hover {
+    background-color: #ff6f10 ;
+}
+
+.contenido_mujer_pant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contenido_mujer_shoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

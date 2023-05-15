@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+/* container */
+.container{
+    position: relative;
+    padding-top: 80px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+    
+
+.container img{
+    width: 100%;
+    
+}
+
+.container h1{
+    position: relative;
+    color: #fff;
+    top: 50%;
+    padding-left: 5%;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.container p{
+    padding-top: 10px;
+    position: absolute;
+    color: #fff;
+    top: 58%;
+    padding-left: 5%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.container button{
+    padding-top: 1%;
+    position: relative;
+}
+
+/*.container button img{
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    padding-left: 15%;
+    width: 30px;
+    height: 30px;
+}*/
+
+header{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+
+/* btn expand */
+#btn-menu{
+    display: none;
+}
+
+
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label img{
+    height: 100%;
+    width: 100%;
+}
+
+
+header label:hover{
+    cursor: pointer;
+    background: #C46D34;
+    transition: 0.5s;
+}
+
+
+/*.header .content h1{
+    color: #C46D34;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Creepster',cursive;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}*/
+
+/* nav bar */
+
+.menu{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin:  auto 0;
+    
+}
+
+.menu li{
+    border-radius: 3px;
+    margin: 0 5px
+}
+
+.menu li a{
+    display: block;
+    color: #C46D34;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: system-ui,sans-serif;
+    text-decoration: none;
+}
+
+.menu > li {
+    float: left;
+    
+}
+
+.menu li ul {
+    display: none;
+    position: relative;
+    min-width: 140px;
+    background:#d68c5b;
+    margin-top: 10px;
+    
+}
+
+.menu li ul li {
+    text-decoration: underline white;
+}
+
+.menu li ul li:hover {
+    background:#bf5f1f ;
+    padding: 0;
+    
+}
+
+
+
+.menu li:hover{
+    background: #d68c5b;
+    transition: 0.5s;
+
+
+}
+
+.menu li:hover > ul{
+    display: block;
+    
+}
+
+.menu li:hover a{
+    color: #fff;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+
+
+/* content */
+header .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header .content .logo {
+    color: #C46D34;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Creepster',cursive;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+header .content .logo:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+header .content a {
+    margin-left: 40%;
+    text-align: right;
+    color:#d68c5b;
+    
+}
+
+
+/* section 1 */
+
+.container p {
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+/* caja principal */
+.caja-principal{
+    display: flex;
+    width: 100%;
+}
+
+
+/* caja principal HOMBRE */
+.caja-principal .men{
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.caja-principal .men img{
+    width: 100%;
+    background-size: contain;
+    position: relative;
+}
+
+.caja-principal .men button {
+    position: relative;
+    background: rgb(97, 199, 71);
+    padding: 10px;
+    margin-left: 25%;
+    width: 20vw;
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+
+}
+
+
+
+/* caja principal MUJER */
+.caja-principal .women{
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.caja-principal .women img{
+    width: 100%;
+}
+
+.caja-principal .women button {
+    position: relative;
+    background: rgb(97, 199, 71);
+    padding: 10px;
+    margin-left: 25%;
+    width: 20vw;
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+
+
+/* hover caja principal */
+.caja-principal .men img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.caja-principal .women img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+
+.footer{
+    background: #C46D34;
+    text-align: center;
+    width: 100%;
+    padding: 64px 0;
+    margin-top: 64px;
+    bottom: 0; 
+}
+
+@media (max-width:800px){
+
+    header label{
+        display: block;
+    }
+    
+    .menu{
+        position: absolute;
+        background:  #E5E7D8;
+        margin-left: -40%;
+        transition: 0.5s;
+        display: block;
+        height: 238px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+    .menu .logo{
+        display: none;
+    }
+
+    .main{
+        padding-top: 54px;
+    }
+
+    .container h1{
+        font-size: 25px;
+
+    }
+    .container p{
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+    .caja-principal{
+        flex-direction: column;
+    }
+
+    .caja-principal .men{
+        width: 100%;
+    }
+
+    .caja-principal .women{
+        width: 100%;
+    }
+
+
+
+
+}
