@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 950px) {
+
+   
+    .part_1 .section1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .caja-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .caja-principal .men {
+        display: flex;
+        flex-direction: row;
+       }
+
+       .caja-principal .men .men_img {
+        width: 70%;
+        
+       }
+
+       .caja-principal .woman {
+        display: flex;
+        flex-direction: row-reverse;
+       }
+
+       .caja-principal .woman .woman_img {
+        width: 70%;
+       }
+    
+
+
+    
+}

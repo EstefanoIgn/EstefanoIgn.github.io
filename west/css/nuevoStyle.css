@@ -1,0 +1,260 @@
+/**** reset ****/
+
+:root {
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: #42134e;
+    --second-color: #40f7ee;
+    --main-modal-color: #c7ee18;
+    --second-modal-color: #000000;
+    --container-width: 1200px;
+}
+
+html {
+ 
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(../img/fondomen.png);
+    background-size: contain;
+    max-height: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+   
+
+}
+
+
+.header {
+    background: white;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 15px;
+    z-index: 950;
+    margin-bottom: 5px;
+}
+
+.header .logo {
+    margin-left: 5%;
+}
+
+
+
+/**** menu aside ***/
+
+
+.nav {
+    width: 30%;
+    transform: translateX(-100%);
+    transition: all .3s ease;
+    z-index: 999;
+    margin-left: -5px;
+    
+}
+
+.nav__link {
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+
+.nav__link--inside:hover {
+    color:coral;
+
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: white;
+    
+}
+
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.list__item--click {
+    cursor: pointer;
+    
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.list__arrow {
+    margin-left: auto;
+    
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    list-style: none;
+    height: 0;
+}
+
+ /*clase agregada en js*/
+.desplegar {
+    transform: translateX(1%);
+}
+
+.open__menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.open__menu:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* section 1 */
+
+#img {
+    width: 100%;
+   
+}
+
+.seccion__1{
+    margin-top: 25%;
+    background: white;
+    display: grid;
+    gap: .5rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+}
+
+/** mujer **/
+
+.seccion__1 .seccion__mujer .seccion__mujer-box {
+    background: #C46D34;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box h3 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: rgb(191, 191, 191);
+    margin-bottom: 5%;
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box button {
+    width: 80%;
+    background-color: lightsteelblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box button:hover {
+    background-color: rgb(95, 148, 218);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/** Hombre **/
+.seccion__1 .seccion__hombre .seccion__hombre-box {
+    background:#C46D34;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box h3 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: rgb(191, 191, 191);
+    margin-bottom: 5%;
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box button {
+    width: 80%;
+    background-color: lightsteelblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box button:hover {
+    background-color: rgb(95, 148, 218);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/**footer**/
+.footer{
+    background: #C46D34;
+    text-align: center;
+    width: 100%;
+    padding: 64px 0;
+    bottom: 0; 
+    margin-top: 40%;
+
+
+}
