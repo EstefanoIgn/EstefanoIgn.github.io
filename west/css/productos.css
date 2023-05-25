@@ -55,8 +55,6 @@ body {
 
 
 /**** menu aside ***/
-
-
 .nav {
     width: 30%;
     transform: translateX(-100%);
@@ -154,7 +152,6 @@ body {
 
 
 /** primer parte ( nav + titulo) **/
-
 .primer_part {
     display: flex;
     justify-content: space-between;
@@ -168,19 +165,16 @@ body {
     justify-content: space-between;
 }
 
+.primer_part .sub__titulo .img1 {
+    width: 50%;
+
+}
+
 .primer_part .sub__titulo .img2 {
-    margin-left: -15%;
+    width: 50%;
+   
 }
 
-
-
-.primer_part .sub__titulo h3 {
-    transform: rotate(-90deg);
-    margin-left: 20%;
-    font-size: 60px;
-    letter-spacing: 15px;
-    font-weight: 600;
-}
 
 
 /** Productos **/
@@ -197,7 +191,21 @@ body {
     font-size: 15px;
     padding: 10%;
     text-align: center;
+    cursor: pointer;
 }
+
+.contenido_mujer .contenido_clasificacion ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.contenido_mujer .contenido_clasificacion ul li:hover {
+    transition: .3s;
+    background: orange;
+}
+
 
 .contenido_mujer .contenido_clasificacion ul .a1 {
     background: lightslategray;
@@ -218,14 +226,6 @@ body {
     color: rgba(245, 245, 245, 0.613);
 }
 
-.contenido_mujer .contenido_abrigos .contenido-titulo {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    color: lightslategray;
-    margin-bottom: 25px;
-}
-
 #titulo_edit {
     margin-top: 8%;
 }
@@ -233,57 +233,62 @@ body {
 #titulo_edit2 {
     margin-top: 8%;
 }
-/*** Productos grilla **/
 
+
+
+/*** Productos grilla **/
 #img {
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
 }
-
+.contenido_mujer .contenido__mujer {
+    margin: 5%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 .card {
-    background: lightgrey;
-    padding: 5%;
-    margin: 5%;
-    border-radius: 15px;
+   background-color: lightslategray;
+   padding: .5rem;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 
-.contenido_descripcion {
-    background: lightslategray;
-    border-radius: 15px;
-    width: 100%;
+.card .contenido_descripcion {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .contenido_descripcion h3 {
+    font-size: 20px;
     padding: 10px;
-}
-.contenido_descripcion h3 {
     text-transform: uppercase;
-    padding: 5px;
+    color: whitesmoke
 }
 
-.contenido_descripcion button {
-    margin: 5%;
-    width: 50%;
+.card .contenido_descripcion p {
+    color: rgba(0, 0, 0, 0.663);
+    margin-bottom: 5px;
+}
+
+.card .contenido_descripcion button {
     padding: 10px;
     border: none;
     border-radius: 25px;
-    background: #ee8e18;
-    font-size: 15px;
-    color: white;
-}
-.contenido_mujer .contenido_abrigos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    background: orange;
+    letter-spacing: 5px;
 }
 
-.contenido_mujer .contenido_abrigos .contenido_contenido {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
+
+
 
 
 
 /** footer **/ 
-
 .footer{
     background: lightslategray;
     text-align: center;
@@ -291,8 +296,13 @@ body {
     padding: 64px 0;
     bottom: 0; 
     margin-top: 5%;
-    
+    display: flex;
+    justify-content: center;
+}
 
+.footer .piePagina {
+    font-size: 15px;
+    text-transform: uppercase;
 
 }
 
@@ -300,25 +310,62 @@ body {
 
 /*** RESPONSIVE *****/ 
 
-@media (max-width: 1020px) {
+@media (max-width: 900px) {
 
     .primer_part {
         display: flex;
+    
     }
 
+    .primer_part .sub__titulo .img1 {
+        width: 50%;
+       height: 70%;
+    }
+    
     .primer_part .sub__titulo .img2 {
+        width: 50%;
+        height: 70%;
+    }
+    
+    .contenido_mujer {
         width: 100%;
-    }
-
-    .primer_part .img2 {
-        display: none;
-    }
-
-    .primer_part .sub__titulo h3 {
-        margin-left: 30%;
-        font-size: 50px;
+        margin-top: -25%;
     }
     
 
+    .contenido_descripcion {
+        font-size: 15px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer .piePagina {
+        font-size: 10px;
+    }
+
 
 }
+
+@media (max-width: 500px) {
+
+    .primer_part .sub__titulo .img1 {
+        width: 50%;
+       height: 70%;
+       display: none;
+    }
+    
+    .primer_part .sub__titulo .img2 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .contenido_descripcion {
+        font-size: 15px;
+    }
+    
+
+}
+

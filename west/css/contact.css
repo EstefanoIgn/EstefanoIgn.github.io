@@ -153,7 +153,7 @@ body {
 
 .primer_part {
     display: flex;
-    height: 500px;
+    height: 300px;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
@@ -165,105 +165,70 @@ body {
     align-items: center;
 }
 .primer_part .titulo h1{
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     color: whitesmoke;
-    font-weight: 800;
-    font-size: 100px;
-}
-.primer_part .titulo p {
-    color: whitesmoke;
-    font-size: 20px;
-    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 60px;
+    margin-left: 10%;
 }
 
 
 
-/* section 1 */
 
-#imgMen {
-    width: 100%; 
-}
-#imgWoman {
-    width: 100%; 
-}
+/** form **/
 
-.seccion__1{
-   
-    background: white;
-    display: grid;
-    gap: 0rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   
-  
+.contact {
+    background: lightgray;
+
 }
 
-/** mujer **/
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
 
-.seccion__1 .seccion__mujer .seccion__mujer-box {
-    background: orange;
-    border-radius: 5px;
+}
+
+form .tag {
     text-align: center;
-    padding: 25px;
-}
-
-.seccion__1 .seccion__mujer .seccion__mujer-box h3 {
-    font-size: 25px;
-    letter-spacing: 10px;
+    font-size: 30px;
     color: lightslategray;
+    letter-spacing: 5px;
+    padding: 1%;
     margin-bottom: 5%;
 }
 
-.seccion__1 .seccion__mujer .seccion__mujer-box button {
-    width: 60%;
-    background-color: lightsteelblue;
-    color: white;
-    font-size: 18px;
+form label {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: lightslategray;
+}
+
+form input {
+    padding: 1%;
     border: none;
-    padding: 10px;
-    border-radius: 25px;
-    transition: .3s;
+    border-radius: 10px;
 }
 
-.seccion__1 .seccion__mujer .seccion__mujer-box button:hover {
-    background-color: rgb(95, 148, 218);
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-
-
-/** Hombre **/
-.seccion__1 .seccion__hombre .seccion__hombre-box {
-    background:lightslategray;
-    padding: 25px;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
-   
-}
-
-.seccion__1 .seccion__hombre .seccion__hombre-box h3 {
-    font-size: 25px;
-    letter-spacing: 10px;
-    color: orange;
+form textarea {
+    border: none;
     margin-bottom: 5%;
+    padding: 1%;
+    border-radius: 10px;
 }
 
-.seccion__1 .seccion__hombre .seccion__hombre-box button {
-    width: 60%;
-    background-color: rgb(95, 148, 218);
-    color: white;
-    font-size: 18px;
+form button {
+    padding: 1%;
     border: none;
-    padding: 10px;
     border-radius: 25px;
-    transition: .3s;
+    background-color: lightslategray;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
-.seccion__1 .seccion__hombre .seccion__hombre-box button:hover {
-    background-color: lightsteelblue;
-    color: whitesmoke;
-    cursor: pointer;
+form button:hover {
+    background: lightseagreen;
+    transition: .5s;
 }
 
 
@@ -281,79 +246,50 @@ body {
 
 }
 
-/* medias */
+@media screen and (max-width: 1020px) {
 
-@media screen and (max-width: 950px) {
-
-    .header {
-        font-size: 20px;
-    }
-
-    .primer_part {
-        height: 350px;
-    }
-
-    .primer_part .titulo h1 {
-        font-size: 70px;
-        letter-spacing: 20px;
-        margin-left: -15%;
-    }
-
-    .primer_part .titulo p {
-        font-size: 15px;
-        letter-spacing: 5px;
-        margin-left: -15%;
-    }
-
-    .seccion__1{
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-        margin-top: 5px;
-      
-    }
-
-    .nav {
-        width: 40%;
-    }
-
-    #link__men {
-        font-size: 15px;
-    }
-
-    
-}
-
-@media screen and (max-width: 472px) {
-
-    .header {
-        font-size: 15px;
-    }
-
-    .nav {
-        width: 80%;
-    }
 
     .primer_part {
         height: 200px;
     }
-
-    .primer_part .titulo h1 {
+    
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
         font-size: 40px;
-        letter-spacing: 15px;
-        margin-left: -40%;
+        margin-left: 10%;
+    }
+    
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .primer_part{
+        height: 150px;
     }
 
-    .primer_part .titulo p {
-        font-size: 10px;
-        letter-spacing: 5px;
-        margin-left: -30%;
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .primer_part {
+        height: 100px;
     }
 
-    .seccion__1{
-        display:flex;
-        flex-direction: column;
-      
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: -20%;
     }
-
 }
